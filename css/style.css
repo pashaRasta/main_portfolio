@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*@include flex */
+/*@include social_icon*/
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 1200px;
+  background: #3d4a5a5c; }
+
+header {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: linear-gradient(90deg, #4259f4, #e014e0, #fff200);
+  mix-blend-mode: exclusion; }
+  header .header_img_inform {
+    box-shadow: 20px 20px 20px #d0d5dd;
+    display: grid;
+    grid-template-columns: 300px 1fr 50%;
+    grid-template-rows: 240px;
+    width: 100%; }
+    header .header_img_inform .img {
+      grid-column: 1;
+      padding-top: 20px; }
+      header .header_img_inform .img img {
+        width: 220px;
+        height: 200px;
+        border-radius: 100px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+    header .header_img_inform .social {
+      grid-column: 2;
+      @inclide flex;
+      -ms-align-items: center;
+      align-items: center;
+      text-align: center; }
+      header .header_img_inform .social h1 {
+        padding-top: 40px;
+        font-size: 42px; }
+      header .header_img_inform .social h2 {
+        font-size: 28px;
+        color: #c7d2e2; }
+      header .header_img_inform .social .social_header {
+        display: flex;
+        justify-content: space-between; }
+        header .header_img_inform .social .social_header .social_email a {
+          background: url(../img/svg/iconmonstr-email-10-48.png) no-repeat; }
+        header .header_img_inform .social .social_header .social_inst {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px; }
+        header .header_img_inform .social .social_header .social_tellegram {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px; }
+    header .header_img_inform .header_button {
+      grid-column: 3;
+      padding-left: 300px;
+      padding-top: 80px; }
+      header .header_img_inform .header_button button {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-image: -webkit-linear-gradient(left, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-image: -o-linear-gradient(left, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-size: 200% auto;
+        border-radius: 10px; }
+        header .header_img_inform .header_button button a {
+          margin: 0;
+          padding: 4px 12px;
+          text-decoration: none;
+          outline: none;
+          display: inline-block;
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          transition: .3s; }
