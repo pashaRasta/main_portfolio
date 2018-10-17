@@ -48,12 +48,12 @@ header{
 				color: #c7d2e2;
 			}
 				.social_header{
+					margin-top: 20px;
 					display: flex;
 					justify-content: space-between;
 					.social_email{
-						a{
-							background: url(../img/svg/iconmonstr-email-10-48.png) no-repeat;
-						}
+						@include social_icon;
+						a{}
 					}
 					.social_inst{
 						@include social_icon;
@@ -91,7 +91,7 @@ header{
 					text-transform: uppercase;			  					
 					letter-spacing: 2px;
 				    box-shadow: 0 0 20px rgba(0,0,0,.1);
-				    transition: .3s;
+				    transition: .6s;
 				    
 				}
 			}
