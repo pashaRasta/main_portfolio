@@ -56,6 +56,31 @@ table {
   margin-top: 24px;
   border-radius: 4px; }
 
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #111;
+  z-index: -1; }
+
+.canvas {
+  position: absolute;
+  z-index: -1; }
+
+.back {
+  top: -100px;
+  left: -100px; }
+
+.mid {
+  top: -200px;
+  left: -200px; }
+
+.front {
+  top: -400px;
+  left: -400px; }
+
 p {
   font-family: 'Charmonman', cursive; }
 
@@ -82,11 +107,36 @@ h3 {
   font-family: 'Lobster', cursive;
   font-size: 18px; }
 
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #111;
+  z-index: -1; }
+
+.canvas {
+  position: absolute;
+  z-index: -1; }
+
+.back {
+  top: -100px;
+  left: -100px; }
+
+.mid {
+  top: -200px;
+  left: -200px; }
+
+.front {
+  top: -400px;
+  left: -400px; }
+
 body {
   margin: 0 auto;
   padding: 0 auto;
   width: 1200px;
-  background: #3d4a5a5c; }
+  /*background: #3d4a5a5c;*/ }
 
 header {
   border-top-left-radius: 40px;
@@ -94,7 +144,6 @@ header {
   background: linear-gradient(90deg, #4259f4, #e014e0, #fff200);
   mix-blend-mode: exclusion; }
   header .header_img_inform {
-    box-shadow: 20px 20px 20px #d0d5dd;
     display: grid;
     grid-template-columns: 300px 1fr 50%;
     grid-template-rows: 240px;

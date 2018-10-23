@@ -1,5 +1,6 @@
 @import "_sittings.scss";
 @import "_fonts.scss";
+@import "_paralax_html.scss";
 
 
 
@@ -7,7 +8,7 @@ body{
 	margin: 0 auto;
 	padding: 0 auto;
 	width: 1200px;
-	background: #3d4a5a5c;
+	/*background: #3d4a5a5c;*/
 }
 
 header{
@@ -16,7 +17,6 @@ header{
 	background:linear-gradient(90deg, rgb(66,89,244), rgb(224,20,224), rgb(255,242,0));
 	mix-blend-mode: exclusion;
 	.header_img_inform{
-		box-shadow: 20px 20px 20px #d0d5dd;
 		display: grid;
 		grid-template-columns: 300px 1fr 50%;
 		grid-template-rows:240px ;
