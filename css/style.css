@@ -123,6 +123,10 @@ h3 {
   font-family: 'Lobster', cursive;
   font-size: 18px; }
 
+html {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
 body {
   margin: 0 auto;
   padding: 0 auto;
