@@ -44,6 +44,31 @@ table {
 /*@include flex */
 /*@include social_icon*/
 /*@include clearfix*/
+p {
+  font-family: 'Charmonman', cursive; }
+
+h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 28px; }
+
+h2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-size: 24px; }
+
+h3 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-size: 18px; }
+
 body {
   margin: 0 auto;
   padding: 0 auto;
@@ -63,7 +88,8 @@ header {
     width: 100%; }
     header .header_img_inform .img {
       grid-column: 1;
-      padding-top: 20px; }
+      padding-top: 20px;
+      padding-left: 20px; }
       header .header_img_inform .img img {
         width: 220px;
         height: 200px;
@@ -127,11 +153,13 @@ main {
   content: "";
   display: table;
   clear: both; }
-  main section {
+  main .wi60 {
     float: left;
     width: 60%; }
-  main section {
+  main .wi40 {
+    float: left;
     width: 40%;
-    overflow-y: fixed; }
-    main section .content_ri {
+    overflow-y: fixed;
+    height: 100vh; }
+    main .wi40 .content_ri {
       padding-left: 30px; }
