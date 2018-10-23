@@ -41,14 +41,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*########################block left 60% width######################*/
 .wi60 .block_grid1, .block_grid2, .block_grid3, .block_grid4, .block_grid5{
 	background: #d7e0ef;
 	padding: 20px 20px;
 	margin-top: 24px;
 	border-radius: 	4px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 0 10px rgba(0,0,0,0.4) inset;
 }
 
 
+/*######################## </block left 60% width######################*/
 
 @mixin flex{
 display: -webkit-flex;
@@ -70,16 +74,30 @@ height: 40px;
   clear: both;
 } /*@include clearfix*/
 
+
+/*########################block rigth 40% width######################*/
+
 .wi40 .block_ri1,.block_ri2,.block_ri3,.block_ri4,.block_ri5,.block_ri6,.block_ri7{
 	background: #d7e0ef;
 	padding: 20px 20px;
 	margin-top: 24px;
 	border-radius: 	4px;
+	 box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 0 10px rgba(0,0,0,0.4) inset;
 }
 
 
+.wi40 .block_ri1,.block_ri2,.block_ri3,.block_ri4,.block_ri5,.block_ri6,.block_ri7:after {
+    z-index: -1;
+    -webkit-transform: rotate(3deg) skew(0deg);
+     -moz-transform: rotate(3deg) skew(0deg);
+     -ms-transform: rotate(3deg) skew(0deg);
+     -o-transform: rotate(3deg) skew(0deg);
+     transform: rotate(3deg) skew(0deg);
+}
 
+/*######################## </block rigth 40%  width######################*/
 
+/*#################cosmos bg####################*/
 .background {
 position: fixed;
 top: 0;
@@ -109,3 +127,4 @@ left: -200px;
 top: -400px;
 left: -400px;
 }
+/*################# </cosmos bg####################*/

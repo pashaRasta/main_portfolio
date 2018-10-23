@@ -3,7 +3,7 @@
 }
  h1{
  	padding-top: 10px;
- 	padding-bottom: 10px;
+ 	padding-bottom: 12px;
 	font-family: 'Anton', sans-serif;
 	font-family: 'Lobster', cursive;
 	font-weight: bold;
@@ -12,21 +12,21 @@
 
  h2{
  	padding-top: 8px;
- 	padding-bottom: 8px;
+ 	padding-bottom: 12px;
 	font-family: 'Anton', sans-serif;
 	font-family: 'Lobster', cursive;
 	font-size: 24px;
 }
 @mixin h2_fonts{
 	padding-top: 8px;
- 	padding-bottom: 8px;
+ 	padding-bottom: 12px;
 	font-family: 'Anton', sans-serif;
 	font-family: 'Lobster', cursive;
 	font-size: 24px;
 	} /*@include h2_fonts*/
  h3{
  	padding-top: 6px;
- 	padding-bottom: 6px;
+ 	padding-bottom: 10px;
 	font-family: 'Anton', sans-serif;
 	font-family: 'Lobster', cursive;
 	font-size: 18px;
