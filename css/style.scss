@@ -98,12 +98,56 @@ header{
 		}
 	}
 }
+main{
+	height: auto;
+	padding: 30px;
+	background: #aec4e8;
+	@include clearfix;
 
 section{
+	float: left;
+	width: 60%;
 	.content_li{
-		.block_grid1{}
-		.block_grid2{}
-		.block_grid3{}
+		.block_grid1{
+			h1{}
+			p{}
+		}
+		.block_grid2{
+			.started{}
+			.working_block{
+				article{
+					img{}
+					h3{}
+					p{}
+				}
+			}
+		}
+		.block_grid3{
+			.main_project{
+				.project1{
+					h3{}
+					p{
+						a{}
+					}
+				}
+				.project2{
+					h3{
+						span{}
+					}
+					p{
+						a{}
+					}
+				}
+				.project3{
+					h3{
+						span{}
+					}
+					p{
+						a{}
+					}
+				}
+			}
+		}
 		.block_grid4{}
 		.block_grid5{}
 	}
@@ -111,7 +155,11 @@ section{
 
 
 section{
+	width: 40%;
+	overflow-y: fixed;
+
 	.content_ri{
+		padding-left: 30px;
 		.block_ri1{}
 		.block_ri2{}
 		.block_ri3{}
@@ -120,4 +168,5 @@ section{
 		.block_ri6{}
 		.block_ri7{}
 	}
+}
 }

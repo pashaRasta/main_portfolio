@@ -43,6 +43,7 @@ table {
 
 /*@include flex */
 /*@include social_icon*/
+/*@include clearfix*/
 body {
   margin: 0 auto;
   padding: 0 auto;
@@ -118,3 +119,19 @@ header {
           letter-spacing: 2px;
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
           transition: .6s; }
+
+main {
+  height: auto;
+  padding: 30px;
+  background: #aec4e8;
+  content: "";
+  display: table;
+  clear: both; }
+  main section {
+    float: left;
+    width: 60%; }
+  main section {
+    width: 40%;
+    overflow-y: fixed; }
+    main section .content_ri {
+      padding-left: 30px; }
