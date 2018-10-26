@@ -62,7 +62,7 @@ table {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.4) inset; }
 
 .wi40 .block_ri1, .block_ri2, .block_ri3, .block_ri4, .block_ri5, .block_ri6, .block_ri7:after {
-  z-index: -1;
+  /*   z-index: -1;*/
   -webkit-transform: rotate(3deg) skew(0deg);
   -moz-transform: rotate(3deg) skew(0deg);
   -ms-transform: rotate(3deg) skew(0deg);
@@ -97,6 +97,12 @@ table {
   left: -400px; }
 
 /*################# </cosmos bg####################*/
+.progress-percentage {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #013a9e; }
+
 p {
   font-family: 'Charmonman', cursive; }
 
@@ -155,7 +161,8 @@ header {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
     header .header_img_inform .social {
       grid-column: 2;
-      @inclide flex;
+      /*
+			@include flex;*/
       -ms-align-items: center;
       align-items: center;
       text-align: center; }
@@ -289,3 +296,22 @@ main {
     height: 100vh; }
     main .wi40 .content_ri {
       padding-left: 30px; }
+      main .wi40 .content_ri .block_ri2 .skills {
+        display: grid;
+        grid-template-columns: 120px 120px 120px; }
+        main .wi40 .content_ri .block_ri2 .skills .skills_bar1 {
+          margin: 0;
+          padding: 0;
+          grid-column: 1; }
+          main .wi40 .content_ri .block_ri2 .skills .skills_bar1 #progress_bar1 {
+            display: block; }
+        main .wi40 .content_ri .block_ri2 .skills .skills_bar2 {
+          margin: 0;
+          padding: 0;
+          grid-column: 2; }
+        main .wi40 .content_ri .block_ri2 .skills .skills_bar3 {
+          margin: 0;
+          padding: 0;
+          grid-column: 3; }
+          main .wi40 .content_ri .block_ri2 .skills .skills_bar3 #progress_bar3 {
+            display: block; }

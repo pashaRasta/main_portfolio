@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="css/fontawesomecss/fontawesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet"> <!-- p -->
 	<link href="https://fonts.googleapis.com/css?family=Anton|Lobster" rel="stylesheet"> <!-- h1 h2 h3-->
-	<script src="js/jQuery.js"></script>
+	<script src="js/jQuery.js" defer></script>
+	<script src="js/plugin.js" defer></script>
 	<script src="js/main.js" defer></script>
 	<title>main portfolio</title>
 </head>
@@ -169,18 +170,19 @@
 			<div class="block_ri2">
 				<h1>Skills</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi asperiores, quam minus, cumque incidunt blanditiis quia saepe magni reprehenderit optio!</p>
+
 				<div class="skills">
-					<form for="html_skills">
-						<input type="text" id="html_skills">
-					</form>
-					<form for="css_skills">
-						<input type="text" id="css_skills">
-					</form>
-					<form for="js_skills">
-						<input type="text" id="js_skills">
-					</form>
+					<div class="skills_bar1">
+						<div id="progress_bar1"></div>
+					</div>
+					<div class="skills_bar2">
+						<div id="progress_bar2" ></div>
+					</div>
+					<div class="skills_bar3">
+						<div id="progress_bar3"></div>
+					</div>
 				</div>
-			</div>
+				
 			<div class="block_ri3">
 				<h1>Lorem ipsum.</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia alias, quibusdam animi. Voluptatum assumenda expedita, doloremque eligendi tempore cupiditate iure?</p>

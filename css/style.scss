@@ -38,8 +38,8 @@ header{
 				}
 		}
 		.social{
-			grid-column: 2;
-			@inclide flex;
+			grid-column: 2;/*
+			@include flex;*/
 			-ms-align-items: center;
 			align-items: center;
 			text-align: center;
@@ -253,7 +253,44 @@ main{
 	.content_ri{
 		padding-left: 30px;
 		.block_ri1{}
-		.block_ri2{}
+		.block_ri2{
+			
+			.skills{
+				display: grid;
+				grid-template-columns: 120px 120px 120px;
+				h1{}
+				p{}
+				.skills_bar1{
+					margin: 0;
+					padding: 0;
+					grid-column: 1;
+						#progress_bar1{
+							display: block;
+							
+						}
+				}
+				.skills_bar2{
+					margin: 0;
+					padding: 0;
+					grid-column: 2;
+						#progress_bar2{
+
+						}
+				}
+				.skills_bar3{
+				margin: 0;
+				padding: 0;	
+					grid-column: 3;
+					#progress_bar3{
+						display: block;
+
+					}
+				}
+			}
+			
+
+			
+		}
 		.block_ri3{}
 		.block_ri4{}
 		.block_ri5{}

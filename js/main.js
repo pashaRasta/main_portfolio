@@ -5,7 +5,7 @@ $(window).scroll(function(){
 	})
 	});
 
-
+//#############  paralax bg #############
 
 $(document).ready(function() {
 var $background = $('div.background'),
@@ -67,4 +67,67 @@ left: offsetX,
 top: offsetY
 });
 }
+});
+
+
+// ############# </ paralax bg #############
+
+$(document).ready(function () {
+    $(".wi40 .skills #progress_bar1").circularProgress({
+        color: "#ea8110",
+        line_width: 10,
+        height: "100px",
+        width: "100px",
+        percent: 0,
+        // counter_clockwise: true,
+        starting_position: 25
+    }).circularProgress('animate', 40, 3000);
+});
+
+$(window).on('load', function () {
+   var $preloader = $('#preloader');
+   $preloader.delay(1800).fadeOut('slow');
+});
+
+
+
+
+
+
+$(document).ready(function () {
+    $(".wi40 .skills #progress_bar2").circularProgress({
+        color: "#25ffe4",
+        line_width: 10,
+        height: "100px",
+        width: "100px",
+        percent: 0,
+        // counter_clockwise: true,
+        starting_position: 20
+    }).circularProgress('animate', 78, 2000);
+});
+
+$(window).on('load', function () {
+   var $preloader = $('#preloader');
+   $preloader.delay(1800).fadeOut('slow');
+});
+
+
+
+
+
+$(document).ready(function () {
+    $(".wi40 .skills #progress_bar3").circularProgress({
+        color: "#25ffe4",
+        line_width: 10,
+        height: "100px",
+        width: "100px",
+        percent: 0,
+        // counter_clockwise: true,
+        starting_position: 0
+    }).circularProgress('animate', 23, 4000);
+});
+
+$(window).on('load', function () {
+   var $preloader = $('#preloader');
+   $preloader.delay(1800).fadeOut('slow');
 });
