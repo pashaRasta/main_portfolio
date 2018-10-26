@@ -258,6 +258,30 @@ main {
           font-family: 'Anton', sans-serif;
           font-family: 'Lobster', cursive;
           font-size: 24px; }
+    main .wi60 .content_li .block_grid2 .working_block {
+      margin-top: 100px; }
+      main .wi60 .content_li .block_grid2 .working_block article {
+        overflow: hidden;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 80px 120px; }
+        main .wi60 .content_li .block_grid2 .working_block article img {
+          grid-column: 1/3;
+          grid-row: 1;
+          width: 200px;
+          height: 200px;
+          overflow: hidden; }
+        main .wi60 .content_li .block_grid2 .working_block article h3 {
+          padding-top: 50px;
+          grid-column: 2;
+          grid-row: 1; }
+        main .wi60 .content_li .block_grid2 .working_block article p {
+          padding-top: 70px;
+          grid-column: 2;
+          grid-row: 2; }
+      main .wi60 .content_li .block_grid2 .working_block hr {
+        color: #333; }
   main .wi40 {
     float: left;
     width: 40%;
