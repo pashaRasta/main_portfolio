@@ -5,6 +5,24 @@ $(window).scroll(function(){
 	})
 	});
 
+
+
+$(document).ready(function () {
+    $(".loading_progress").circularProgress({
+        color: "#ea8110",
+        line_width: 12,
+        height: "500px",
+        width: "500px",
+        percent: 0,
+        // counter_clockwise: true,
+        starting_position: 25
+    }).circularProgress('animate', 100, 2000);
+
+    $(window).on('load', function () {
+   var $preloader = $('#preloader');
+   $preloader.delay(1800).fadeOut('slow');
+});
+
 //#############  paralax bg #############
 
 $(document).ready(function() {
@@ -68,66 +86,22 @@ top: offsetY
 });
 }
 });
-
+});
 
 // ############# </ paralax bg #############
+// #################### поле регистрации заявки #############
 
-$(document).ready(function () {
-    $(".wi40 .skills #progress_bar1").circularProgress({
-        color: "#ea8110",
-        line_width: 10,
-        height: "100px",
-        width: "100px",
-        percent: 0,
-        // counter_clockwise: true,
-        starting_position: 25
-    }).circularProgress('animate', 40, 3000);
+$(document).ready(function() {
+    $("#request_form").submit(function() {
+        $ajax({
+            type:"POST",
+            url:"main.php",
+            data: $(this).serialize()
+        }).done(function(){
+            alert("Спасибо за заявку,мы с вами свяжемся.");
+        });
+        return false;
+    });
 });
 
-$(window).on('load', function () {
-   var $preloader = $('#preloader');
-   $preloader.delay(1800).fadeOut('slow');
-});
-
-
-
-
-
-
-$(document).ready(function () {
-    $(".wi40 .skills #progress_bar2").circularProgress({
-        color: "#25ffe4",
-        line_width: 10,
-        height: "100px",
-        width: "100px",
-        percent: 0,
-        // counter_clockwise: true,
-        starting_position: 20
-    }).circularProgress('animate', 78, 2000);
-});
-
-$(window).on('load', function () {
-   var $preloader = $('#preloader');
-   $preloader.delay(1800).fadeOut('slow');
-});
-
-
-
-
-
-$(document).ready(function () {
-    $(".wi40 .skills #progress_bar3").circularProgress({
-        color: "#25ffe4",
-        line_width: 10,
-        height: "100px",
-        width: "100px",
-        percent: 0,
-        // counter_clockwise: true,
-        starting_position: 0
-    }).circularProgress('animate', 23, 4000);
-});
-
-$(window).on('load', function () {
-   var $preloader = $('#preloader');
-   $preloader.delay(1800).fadeOut('slow');
-});
+// #################### </поле регистрации заявки #############

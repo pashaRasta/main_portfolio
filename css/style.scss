@@ -240,7 +240,26 @@ main{
 			}
 		}
 		.block_grid4{}
-		.block_grid5{}
+		.block_grid5{
+			margin: 0 auto;
+			text-align: center;
+			#request_form{
+				input{
+					width: 60%;
+					margin: auto 12px;
+					background: #f49841;
+					height: 28px;
+					border-radius: 10px;
+
+				}
+				textarea{
+					width: 60%;
+					height: 200px;
+					margin: auto 12px;
+				}
+				button{width: 38px;}
+			}
+		}
 	}
 }
 
@@ -252,50 +271,70 @@ main{
 	height: 100vh;
 	.content_ri{
 		padding-left: 30px;
-		.block_ri1{}
-		.block_ri2{
-			
+	.block_ri1{}
+	.block_ri2{
+		height: auto;
+			h1{}
+			p{}
 			.skills{
+				margin-top: 100px;
 				display: grid;
-				grid-template-columns: 120px 120px 120px;
-				h1{}
-				p{}
+				grid-column: 1fr;
+				grid-row: 100px 100px 100px;
+				grid-gap: 20px;
+				margin: 0 auto;
 				.skills_bar1{
-					margin: 0;
-					padding: 0;
-					grid-column: 1;
-						#progress_bar1{
-							display: block;
-							
-						}
+					margin-top: 30px;
+					p{
+						@include p_skill
+					}
+					progress{
+							position: absolute;
+							left: 50%;
+							transform: translate(-50%,-50%);
+							width: 80%;
+							height: 24px;
+							border-radius: 30px;
+					}
 				}
 				.skills_bar2{
-					margin: 0;
-					padding: 0;
-					grid-column: 2;
-						#progress_bar2{
-
-						}
+					p{
+						@include p_skill
+					}
+					
+					progress{
+							position: absolute;
+							left: 50%;
+							transform: translate(-50%,-50%);
+							width: 80%;
+							height: 24px;
+					}
 				}
 				.skills_bar3{
-				margin: 0;
-				padding: 0;	
-					grid-column: 3;
-					#progress_bar3{
-						display: block;
-
+					p{
+						@include p_skill
+					}
+					
+					progress{
+							position: absolute;
+							left: 50%;
+							transform: translate(-50%,-50%);
+							width: 80%;
+							height: 24px;
 					}
 				}
 			}
 			
-
-			
 		}
-		.block_ri3{}
-		.block_ri4{}
-		.block_ri5{}
-		.block_ri6{}
-		.block_ri7{}
-	}
+			
+		
+	.block_ri3{}
+	.block_ri4{}
+	.block_ri5{}
+	.block_ri6{}
+	.block_ri7{}
+	
 }
 }
+}
+

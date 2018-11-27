@@ -23,6 +23,39 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+.loading_progress/*.loading_progress_left, .loading_progress_ratate*/{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: 1000;
+	  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	
+
+}
+.progress-percentage{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: 1000;
+	font-weight: bold;
+	color: #333;
+}
+
+
+
 body {
 	line-height: 1;
 }
@@ -138,3 +171,16 @@ left: -400px;
 	font-weight: bold;
 	color: #013a9e;
 }
+@mixin p_skill{
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 8px;
+}
+ /*@include p_skill*/
+
+
+/*@mixin {
+
+
+}
+ @include*/

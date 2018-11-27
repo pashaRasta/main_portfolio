@@ -23,6 +23,36 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+.loading_progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
+.progress-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  font-weight: bold;
+  color: #333; }
+
 body {
   line-height: 1; }
 
@@ -103,6 +133,12 @@ table {
   font-weight: bold;
   color: #013a9e; }
 
+/*@include p_skill*/
+/*@mixin {
+
+
+}
+ @include*/
 p {
   font-family: 'Charmonman', cursive; }
 
@@ -289,6 +325,21 @@ main {
           grid-row: 2; }
       main .wi60 .content_li .block_grid2 .working_block hr {
         color: #333; }
+    main .wi60 .content_li .block_grid5 {
+      margin: 0 auto;
+      text-align: center; }
+      main .wi60 .content_li .block_grid5 #request_form input {
+        width: 60%;
+        margin: auto 12px;
+        background: #f49841;
+        height: 28px;
+        border-radius: 10px; }
+      main .wi60 .content_li .block_grid5 #request_form textarea {
+        width: 60%;
+        height: 200px;
+        margin: auto 12px; }
+      main .wi60 .content_li .block_grid5 #request_form button {
+        width: 38px; }
   main .wi40 {
     float: left;
     width: 40%;
@@ -296,22 +347,45 @@ main {
     height: 100vh; }
     main .wi40 .content_ri {
       padding-left: 30px; }
-      main .wi40 .content_ri .block_ri2 .skills {
-        display: grid;
-        grid-template-columns: 120px 120px 120px; }
-        main .wi40 .content_ri .block_ri2 .skills .skills_bar1 {
-          margin: 0;
-          padding: 0;
-          grid-column: 1; }
-          main .wi40 .content_ri .block_ri2 .skills .skills_bar1 #progress_bar1 {
-            display: block; }
-        main .wi40 .content_ri .block_ri2 .skills .skills_bar2 {
-          margin: 0;
-          padding: 0;
-          grid-column: 2; }
-        main .wi40 .content_ri .block_ri2 .skills .skills_bar3 {
-          margin: 0;
-          padding: 0;
-          grid-column: 3; }
-          main .wi40 .content_ri .block_ri2 .skills .skills_bar3 #progress_bar3 {
-            display: block; }
+      main .wi40 .content_ri .block_ri2 {
+        height: auto; }
+        main .wi40 .content_ri .block_ri2 .skills {
+          margin-top: 100px;
+          display: grid;
+          grid-column: 1fr;
+          grid-row: 100px 100px 100px;
+          grid-gap: 20px;
+          margin: 0 auto; }
+          main .wi40 .content_ri .block_ri2 .skills .skills_bar1 {
+            margin-top: 30px; }
+            main .wi40 .content_ri .block_ri2 .skills .skills_bar1 p {
+              text-transform: uppercase;
+              text-align: center;
+              padding: 10px 8px; }
+            main .wi40 .content_ri .block_ri2 .skills .skills_bar1 progress {
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 80%;
+              height: 24px;
+              border-radius: 30px; }
+          main .wi40 .content_ri .block_ri2 .skills .skills_bar2 p {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px 8px; }
+          main .wi40 .content_ri .block_ri2 .skills .skills_bar2 progress {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 24px; }
+          main .wi40 .content_ri .block_ri2 .skills .skills_bar3 p {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px 8px; }
+          main .wi40 .content_ri .block_ri2 .skills .skills_bar3 progress {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 24px; }
